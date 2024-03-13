@@ -1,15 +1,13 @@
 # Assignment 1
 ## Team Members
-//-- place table as shown in main readme.md file --//
-## Output Screenshots
-//-- Add output screenshots here. --//
+//-- 19k-0348 Faizan Bayounus--//
+
+
 ## Results and Analysis
-//-- Show graphs results and charts where necessary and discuss the results and what they signify. --// 
+![Refer the image for graphical representation of the results](image.png)
+    results.xlss file. refer this sheet for results
+    
+
 ## Major Problems Encountered
-1. Issue 1: Blah blah .....
-    - Solution1: tried to blah blahb
-    - Solution2: treid to blab blah
-    - **Resolved**
-3. Issue 2: Blah blah blah ....
-    - Solution1: tried to blah blahb
+1. Slow computation time on large input value.
     - **Resolved**
