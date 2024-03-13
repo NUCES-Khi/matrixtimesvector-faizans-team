@@ -1,10 +1,9 @@
 # PDC Assignments and Projects
 ## Team Members
-|std_id|Name|
-|--------|-|
-|k20-1234|Amjad Sajid|
-|k20-4321|Majid Sajid|
-|k20-2143|Sajjaad Sajid|
+
+
+|k19-0348|Faizan Bayounus|
+
 
 ## Assingment 1 ##
 Status: **In progress**

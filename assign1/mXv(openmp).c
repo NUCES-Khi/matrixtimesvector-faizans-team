@@ -1,13 +1,14 @@
-/*
- * Programmer(s) : Faizan Bayounus(k19-0348)
- * Date: 
- * Desc: Sequential version of matrix vector multiplication. 
- */
+
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <omp.h>
 
 void matVecMult(double **matrix, double *vector, double *result, int rows, int cols) {
+    #pragma omp parallel for
     for (int i = 0; i < rows; i++) {
         result[i] = 0.0;
         for (int j = 0; j < cols; j++) {
@@ -44,12 +45,12 @@ int main(int argc, char *argv[]) {
     }
 
     // Perform matrix-vector multiplication
-    clock_t start_time = clock();
+    double start_time = omp_get_wtime();
     matVecMult(matrix, vector, result, size, size);
-    clock_t end_time = clock();
+    double end_time = omp_get_wtime();
 
     // Calculate execution time
-    double execution_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+    double execution_time = end_time - start_time;
 
     // Print result and execution time
     printf("Result:\n");
